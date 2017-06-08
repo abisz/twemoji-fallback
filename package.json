@@ -2,7 +2,7 @@
   "name": "twemoji-fallback",
   "version": "1.0.0",
   "description": "emoji support detection and fallback",
-  "main": "./dist/twemoji-fallback.js",
+  "main": "index.js",
   "scripts": {
     "test": "npm t",
     "lint": "./node_modules/.bin/eslint --cache --ext .js ./index.js",
