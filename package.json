@@ -2,10 +2,13 @@
   "name": "twemoji-fallback",
   "version": "0.0.0",
   "description": "emoji support detection and fallback",
-  "main": "index.js",
+  "main": "./dist/twemoji-fallback.js",
   "scripts": {
     "test": "npm t",
-    "lint": "./node_modules/.bin/eslint --cache --ext .js ."
+    "lint": "./node_modules/.bin/eslint --cache --ext .js ./index.js",
+    "build": "npm-run-all build:*",
+    "build:common": "browserify ./index.js -o dist/twemoji-fallback.js -t [ babelify ]",
+    "build:min": "browserify ./index.js -o dist/twemoji-fallback.min.js -t [ babelify ] -g uglifyify"
   },
   "repository": {
     "type": "git",
@@ -16,7 +19,9 @@
     "fallback",
     "web",
     "js",
-    "html"
+    "html",
+    "progressive",
+    "enhancement"
   ],
   "author": "Simon Reinsperger",
   "license": "MIT",
@@ -25,12 +30,16 @@
   },
   "homepage": "https://github.com/abisz/twemoji-fallback#readme",
   "dependencies": {
-    "lodash": "^4.17.4",
     "twemoji": "^2.3.0"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.5.2",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0"
+    "eslint-plugin-import": "^2.3.0",
+    "npm-run-all": "^4.0.2",
+    "uglifyify": "^3.0.4"
   }
 }
