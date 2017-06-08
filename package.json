@@ -4,7 +4,8 @@
   "description": "emoji support detection and fallback",
   "main": "index.js",
   "scripts": {
-    "test": "npm t"
+    "test": "npm t",
+    "lint": "./node_modules/.bin/eslint --cache --ext .js ."
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/abisz/twemoji-fallback/issues"
   },
-  "homepage": "https://github.com/abisz/twemoji-fallback#readme"
+  "homepage": "https://github.com/abisz/twemoji-fallback#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "twemoji": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  }
 }
