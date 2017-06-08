@@ -1,6 +1,6 @@
 {
   "name": "twemoji-fallback",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "emoji support detection and fallback",
   "main": "./dist/twemoji-fallback.js",
   "scripts": {
