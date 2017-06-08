@@ -2,13 +2,13 @@
   "name": "twemoji-fallback",
   "version": "1.0.1",
   "description": "emoji support detection and fallback",
-  "main": "index.js",
+  "main": "./dist/twemoji-fallback.js",
   "scripts": {
     "test": "npm t",
     "lint": "./node_modules/.bin/eslint --cache --ext .js ./index.js",
     "build": "npm-run-all build:*",
-    "build:common": "browserify ./index.js -o dist/twemoji-fallback.js -t [ babelify ]",
-    "build:min": "browserify ./index.js -o dist/twemoji-fallback.min.js -t [ babelify ] -g uglifyify"
+    "build:common": "browserify -s twemoji-fallback ./index.js -o dist/twemoji-fallback.js -t [ babelify ]",
+    "build:min": "browserify -s twemoji-fallback ./index.js -o dist/twemoji-fallback.min.js -t [ babelify ] -g uglifyify"
   },
   "repository": {
     "type": "git",
