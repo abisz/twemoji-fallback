@@ -1,0 +1,26 @@
+{
+  "name": "twemoji-fallback",
+  "version": "0.0.0",
+  "description": "emoji support detection and fallback",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abisz/twemoji-fallback.git"
+  },
+  "keywords": [
+    "emoji",
+    "fallback",
+    "web",
+    "js",
+    "html"
+  ],
+  "author": "Simon Reinsperger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abisz/twemoji-fallback/issues"
+  },
+  "homepage": "https://github.com/abisz/twemoji-fallback#readme"
+}
